@@ -5,6 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<h3>INDEX.HTMLL</h3>
+<h3>INDEX.HTML</h3>
+<script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+var a = 3;
+while (a--)
+$.ajax({
+    url: "/restSlow",
+    success:function (res) {
+        console.log(res);
+    }
+});
+$.ajax({
+    url: "/restFast",
+    success: function (res) {
+        console.log(res);
+    }
+})
+</script>
 </body>
 </html>
